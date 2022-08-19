@@ -1,0 +1,90 @@
+#filtro{
+    
+    width: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item{
+    padding: 1rem;
+    background-color: rgba(85, 77, 77, 0.467);
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 1px;
+    cursor: pointer;
+    
+}
+.item:hover{
+    color: greenyellow;
+    background-color: blue;
+    font-weight: bold;
+}
+
+body{
+    margin: 0px;
+}
+
+/***estilo de la cabecera****/
+#cabecera{
+    background-color: rgb(39, 41, 44);
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    
+}
+#contTexto{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+#contImg{
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin-top: 70px;
+}
+#titulo{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.flotar{
+    animation: flotarArriba 4s ease-in-out infinite;
+}
+
+@keyframes flotarArriba {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/***************Estilo para los personajes y el cuerpo*****************/
+.imgPersonaje{
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+#cuerpo{
+    /**background-color: rgb(240, 240, 112);**/
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer{
+    text-align: center;
+}
+.negrilla{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
